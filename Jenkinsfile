@@ -2,9 +2,13 @@ pipeline {
     agent any
     stages {
         stage('Checkout Code') {
-            steps {
-                git 'https://github.com/your-username/your-python-repo.git'
-            }
+    steps {
+        git branch: 'main',
+            credentialsId: 'github-creds',
+            url: 'https://github.com/senthilkumar4125/my-python-project.git'
+    }
+}
+
         }
         stage('Install Dependencies') {
             steps {
