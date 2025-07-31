@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'sudo apt update && sudo apt install -y python3 python3-pip'
+                sh 'python3 --version'
                 sh 'pip3 install --upgrade pip'
             }
         }
