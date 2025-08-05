@@ -17,3 +17,4 @@ def delete_folder(folder_path):
 # Example usage
 delete_folder("/home/ec2-user/old_project")
 
+print("no errorr")
